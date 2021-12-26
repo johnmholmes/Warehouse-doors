@@ -10,9 +10,7 @@
 #include <Stepper.h>
 
 const int stepsPerRevolution = 2048; // this needs to be set to suit your stepper motor
-unsigned long timerStart = 0; 
-unsigned long nextDelay = 30000;
-unsigned long nextCode = 0;
+
 int speeda = 5;    //speed for the rotation of the stepper motor
 
 int stepa = -1500;  //-1500 steps anti clockwise
@@ -34,8 +32,6 @@ void DOOR1_OPEN() {
   digitalWrite(10, LOW);
   digitalWrite(11, LOW);
   delay(60000); 
-  nextCode = (timerStart + nextDelay);
-  
 }
 
 void DOOR2_OPEN() {
