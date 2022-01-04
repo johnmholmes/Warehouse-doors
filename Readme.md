@@ -49,7 +49,7 @@ void DOOR1_OPEN() {
   
  delay(60000); 
   
- nextCode = (timerStart + nextDelay);
+
 
 # These then called up in the viod loop() in a sequence 
 
